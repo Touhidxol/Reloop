@@ -184,7 +184,7 @@ export default function Listings() {
             return (
               <div key={listing._id} className="card group">
                 <div className="flex items-start gap-3 mb-4">
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl flex-shrink-0 border ${cat.color}`}>
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-2xl shrink-0 border ${cat.color}`}>
                     {cat.icon}
                   </div>
                   <div className="flex-1 min-w-0">

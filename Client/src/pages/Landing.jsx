@@ -104,7 +104,7 @@ export default function Landing() {
         <div className="grid md:grid-cols-2 gap-5">
           {features.map(({ icon: Icon, title, desc, color }) => (
             <div key={title} className="card flex gap-4">
-              <div className={`w-10 h-10 ${color} rounded-xl flex items-center justify-center flex-shrink-0`}>
+              <div className={`w-10 h-10 ${color} rounded-xl flex items-center justify-center shrink-0`}>
                 <Icon size={18} strokeWidth={2} />
               </div>
               <div>

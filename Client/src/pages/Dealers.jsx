@@ -165,13 +165,13 @@ export default function Dealers() {
         <div className="space-y-2.5">
           {mockOffers.map((offer) => (
             <div key={offer._id} className="card flex items-center gap-4">
-              <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center text-lg flex-shrink-0">🏪</div>
+              <div className="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center text-lg shrink-0">🏪</div>
               <div className="flex-1 min-w-0">
                 <div className="font-medium text-gray-900 text-sm">{offer.dealer.name}</div>
                 <div className="text-gray-400 text-xs">{offer.listingTitle} · {offer.estimatedPickupTime}</div>
                 <div className="text-gray-300 text-xs italic truncate mt-0.5">"{offer.message}"</div>
               </div>
-              <div className="text-right flex-shrink-0">
+              <div className="text-right shrink-0">
                 <div className="text-emerald-600 font-bold text-lg">₹{offer.offeredPrice}</div>
                 <div className="text-gray-300 text-xs">₹{offer.pricePerKg}/kg</div>
                 {offer.status === "pending" ? (

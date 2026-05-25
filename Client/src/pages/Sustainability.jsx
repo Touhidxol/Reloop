@@ -51,8 +51,8 @@ export default function Sustainability() {
         </div>
 
         {/* Eco Level */}
-        <div className="card mb-6 flex items-center gap-5 border-emerald-100 bg-gradient-to-r from-emerald-50 to-white">
-          <div className="text-4xl animate-float flex-shrink-0">🏆</div>
+        <div className="card mb-6 flex items-center gap-5 border-emerald-100 bg-linear-to-r from-emerald-50 to-white">
+          <div className="text-4xl animate-float shrink-0">🏆</div>
           <div className="flex-1">
             <div className="flex items-center gap-3 mb-1">
               <span className="font-display text-2xl font-bold text-gray-900">Eco {level}</span>
@@ -63,7 +63,7 @@ export default function Sustainability() {
               <div className="h-full bg-emerald-500 rounded-full transition-all duration-1000" style={{ width: `${progress}%` }} />
             </div>
           </div>
-          <div className="text-right flex-shrink-0">
+          <div className="text-right shrink-0">
             <div className="text-emerald-600 text-3xl font-bold font-display">{Math.round(progress)}%</div>
             <div className="text-gray-400 text-xs">to next level</div>
           </div>
