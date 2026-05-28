@@ -31,7 +31,7 @@ export default function Landing() {
           <div className="w-7 h-7 bg-emerald-500 rounded-lg flex items-center justify-center">
             <Recycle size={15} className="text-white" strokeWidth={2.5} />
           </div>
-          <span className="font-display font-bold text-lg tracking-tight">EcoLoop</span>
+          <span className="font-display font-bold text-lg tracking-tight">ReLoop</span>
         </div>
         <div className="flex gap-2">
           <button onClick={() => navigate("/login")} className="btn-secondary">Sign in</button>
@@ -53,7 +53,7 @@ export default function Landing() {
         </h1>
 
         <p className="text-gray-500 text-lg max-w-xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          EcoLoop connects households with verified recycling dealers through AI-driven waste classification, real-time bidding, and geospatial discovery.
+          ReLoop connects households with verified recycling dealers through AI-driven waste classification, real-time bidding, and geospatial discovery.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 justify-center animate-fade-up" style={{ animationDelay: "0.15s" }}>
@@ -128,7 +128,7 @@ export default function Landing() {
       </section>
 
       <footer className="py-8 text-center text-gray-400 text-xs border-t border-gray-100">
-        © 2024 EcoLoop — AI-Powered Smart Scrap Marketplace
+        © 2024 ReLoop — AI-Powered Smart Scrap Marketplace
       </footer>
     </div>
   );

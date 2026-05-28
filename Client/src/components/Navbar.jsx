@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="w-7 h-7 bg-emerald-500 rounded-lg flex items-center justify-center">
             <Recycle size={15} className="text-white" strokeWidth={2.5} />
           </div>
-          <span className="font-display font-bold text-lg text-gray-900 tracking-tight">EcoLoop</span>
+          <span className="font-display font-bold text-lg text-gray-900 tracking-tight">ReLoop</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-0.5">

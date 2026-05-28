@@ -47,7 +47,7 @@ export default function Sustainability() {
       <div className="max-w-6xl mx-auto px-5 py-8">
         <div className="mb-8">
           <h1 className="font-display text-3xl font-bold text-gray-900 mb-0.5">Sustainability Dashboard</h1>
-          <p className="text-gray-400 text-sm">Your environmental impact since joining EcoLoop</p>
+          <p className="text-gray-400 text-sm">Your environmental impact since joining ReLoop</p>
         </div>
 
         {/* Eco Level */}

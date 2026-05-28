@@ -3,7 +3,7 @@ import { useAuth } from "../context/AuthContext";
 import { mockListings, mockOffers, categoryMeta, statusMeta } from "../data/mockData";
 import { Plus, Package, TrendingUp, Leaf, Star, ArrowRight, Clock, ChevronRight } from "lucide-react";
 
-export default function Dashboard() {
+const Dashboard = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
   const pending = mockOffers.filter(o => o.status === "pending");
@@ -60,17 +60,17 @@ export default function Dashboard() {
                 const st = statusMeta[l.status];
                 return (
                   <div key={l._id} className="card flex items-center gap-4 cursor-pointer" onClick={() => navigate("/listings")}>
-                    <div className={`w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0 ${cat.color.split(' ')[0]}`}>
+                    <div className={`w-11 h-11 rounded-xl flex items-center justify-center text-xl shrink-0 ${cat.color.split(' ')[0]}`}>
                       {cat.icon}
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-0.5">
                         <span className="font-medium text-gray-900 text-sm truncate">{l.title}</span>
-                        <span className={`tag ${st.color} flex-shrink-0`}>{st.label}</span>
+                        <span className={`tag ${st.color} shrink-0`}>{st.label}</span>
                       </div>
                       <div className="text-gray-400 text-xs">{l.estimatedWeight}kg · {l.offers} offers · ₹{l.aiAnalysis.estimatedPrice.min}–{l.aiAnalysis.estimatedPrice.max}</div>
                     </div>
-                    <ArrowRight size={14} className="text-gray-300 flex-shrink-0" />
+                    <ArrowRight size={14} className="text-gray-300 shrink-0" />
                   </div>
                 );
               })}
@@ -109,3 +109,5 @@ export default function Dashboard() {
     </div>
   );
 }
+
+export default Dashboard
